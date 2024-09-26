@@ -11,7 +11,7 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.layout = html.Div([
     html.H2("PRONÓSTICO EJECUCIÓN DE UN PROYECTO USANDO REGRESIÓN LINEAL", style={"textAlign":"center", "color":"#002060"}),
-    html.P("Se está utilizando una base de datos donde se registra el avance planeado y ejecutado día a día, hasta el 21 de septiembre del presente año. El avance planeado al 21/09/2024 es de 14.21%, mientras que el avance ejecutado a esa misma fecha es de 7.20%.",
+    html.P("Se está utilizando una base de datos donde se registra el avance planeado y ejecutado día a día, a la fecha. El avance planeado es de 14.21%, mientras que el avance ejecutado a la  fecha es de 7.20%.",
            style={'display': 'block','fontSize': 18,'margin': '25px', 'text-align': 'center'}),
     html.Label("Introduce el % planeado segun la fecha a predecir avance (número entre 1 y 100): ", style={'fontSize': 20,"textAlign": "center",'margin': '25px'}),
     dcc.Input(id='input-numero', type='number', value=1, min=1, max=100,
@@ -43,7 +43,7 @@ def train_and_display(valor):
         go.Scatter(x=X_test.squeeze(), y=y_test, name='test', mode='markers'),
         go.Scatter(x=x_range, y=y_range, name='prediction')
     ],
-        go.Layout(title="Relación entre Programado y Ejecutado (Datos del 01/01/2024 al 21/09/2024)", xaxis=dict(title="Programado"), yaxis=dict(title="Ejecutado"))
+        go.Layout(title="Relación entre Programado y Ejecutado", xaxis=dict(title="Programado"), yaxis=dict(title="Ejecutado"))
     )
 
     if valor is None or valor < 1 or valor > 100:
