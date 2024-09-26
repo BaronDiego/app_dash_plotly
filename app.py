@@ -9,9 +9,11 @@ import dash_bootstrap_components as dbc
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
+df = pd.read_excel("data.xlsx")
+
 app.layout = html.Div([
     html.H2("PRONÓSTICO EJECUCIÓN DE UN PROYECTO USANDO REGRESIÓN LINEAL", style={"textAlign":"center", "color":"#002060"}),
-    html.P("Se está utilizando una base de datos donde se registra el avance planeado y ejecutado día a día, a la fecha. El avance planeado es de 14.21%, mientras que el avance ejecutado a la  fecha es de 7.20%.",
+    html.P("Se está utilizando una base de datos donde se registra el avance planeado y ejecutado día a día, a la fecha.",
            style={'display': 'block','fontSize': 18,'margin': '25px', 'text-align': 'center'}),
     html.Label("Introduce el % planeado segun la fecha a predecir avance (número entre 1 y 100): ", style={'fontSize': 20,"textAlign": "center",'margin': '25px'}),
     dcc.Input(id='input-numero', type='number', value=1, min=1, max=100,
@@ -28,9 +30,9 @@ app.layout = html.Div([
     Input('input-numero', 'value')
     )
 def train_and_display(valor):
-    df = df = pd.read_excel("data.xlsx")
     X = df[['Programado']].values
-    X_train, X_test, y_train, y_test = train_test_split(X, df['Ejecutado'], test_size=0.25,random_state=42)
+    y = df['Ejecutado']
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25,random_state=42)
 
     model = linear_model.LinearRegression()
     model.fit(X_train, y_train)
