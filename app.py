@@ -4,12 +4,19 @@ import plotly.graph_objs as go
 from dash import Dash, html, dcc, Input, Output
 from sklearn import linear_model
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error, r2_score
 import dash_bootstrap_components as dbc
+import json
 
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
-df = pd.read_excel("data.xlsx")
+filename_in='data.json'
+with open(filename_in, "r", encoding="utf8") as json_file:
+    data = json.load(json_file)
+
+df = pd.DataFrame(data)
+df["Fecha"] = pd.to_datetime(df["Fecha"])
 
 app.layout = html.Div([
     html.H2("PRONÓSTICO EJECUCIÓN DE UN PROYECTO USANDO REGRESIÓN LINEAL", style={"textAlign":"center", "color":"#002060"}),
@@ -21,12 +28,16 @@ app.layout = html.Div([
     html.Hr(),
     html.Div(id='resultado', style={'fontSize': 20, "border": "2px solid blue", "background-color": "lightblue","textAlign": "center", 'margin': '25px'}),
     dcc.Graph(id="graph"),
+    html.Div(id='mse', style={'fontSize': 20,"textAlign": "center", 'margin': '25px'}),
+    html.Div(id='r2', style={'fontSize': 20,"textAlign": "center", 'margin': '25px'})
 ])
 
 
 @app.callback(
     Output("graph", "figure"),
     Output('resultado', 'children'),
+    Output('mse', 'children'),
+    Output('r2', 'children'),
     Input('input-numero', 'value')
     )
 def train_and_display(valor):
@@ -39,6 +50,7 @@ def train_and_display(valor):
 
     x_range = np.linspace(X.min(), X.max(), 100)
     y_range = model.predict(x_range.reshape(-1, 1))
+    y_pred = model.predict(X_test)
 
     fig = go.Figure([
         go.Scatter(x=X_train.squeeze(), y=y_train, name='train', mode='markers'),
@@ -54,10 +66,11 @@ def train_and_display(valor):
         planeado = valor
         prediccion = model.predict([[planeado]])
         entero = float(prediccion[0])
-        print(entero)
-        print(valor)
 
-    return fig, f"El pronostico, segun el porcentaje planeado es: {entero :.2f}%"
+    mse = mean_squared_error(y_test, y_pred)
+    r2 = r2_score(y_test, y_pred)
+
+    return fig, f"El pronostico, segun el porcentaje planeado es: {entero :.2f}%", f"MSE: {mse}", f"r2: {r2}"
 
 
 if __name__ == '__main__':
