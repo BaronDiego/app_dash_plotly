@@ -19,14 +19,13 @@ df = pd.DataFrame(data)
 df["Fecha"] = pd.to_datetime(df["Fecha"])
 
 app.layout = html.Div([
-    html.H2("PRONÓSTICO EJECUCIÓN DE UN PROYECTO USANDO REGRESIÓN LINEAL", style={"textAlign":"center", "color":"#002060"}),
-    html.P("Se está utilizando una base de datos donde se registra el avance planeado y ejecutado día a día, a la fecha.",
-           style={'display': 'block','fontSize': 18,'margin': '25px', 'text-align': 'center'}),
+    html.H2("REVERGY COLOMBIA PROYECTO PUERTA DE ORO | PV | PRONÓSTICO EJECUCIÓN USANDO REGRESIÓN LINEAL", style={
+        "textAlign":"center", "color":"#094780","border": "2px solid #094780", 'margin': '25px', "padding": "10px"}),
     html.Label("Introduce el % planeado segun la fecha a predecir avance (número entre 1 y 100): ", style={'fontSize': 20,"textAlign": "center",'margin': '25px'}),
     dcc.Input(id='input-numero', type='number', value=1, min=1, max=100,
               style={'display':'inline-block','border':'1px solid #ccc', 'border-radius': '4px','box-sizing': 'border-box', 'justify-content': 'center','align-items': 'center'}),
     html.Hr(),
-    html.Div(id='resultado', style={'fontSize': 20, "border": "2px solid blue", "background-color": "lightblue","textAlign": "center", 'margin': '25px'}),
+    html.H3(id='resultado', style={'fontSize': 22, "border": "2px solid blue", "background-color": "lightblue","textAlign": "center", 'margin': '25px',"padding": "5px"}),
     dcc.Graph(id="graph"),
     html.Div(id='mse', style={'fontSize': 20,"textAlign": "center", 'margin': '25px'}),
     html.Div(id='r2', style={'fontSize': 20,"textAlign": "center", 'margin': '25px'})
