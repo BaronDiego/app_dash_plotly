@@ -1077,11 +1077,388 @@
   {
     "Fecha": "28/09/2024",
     "Programado": 0.15,
-    "Ejecutado": 0.0765
+    "Ejecutado": 0.0777
   },
   {
     "Fecha": "30/09/2024",
     "Programado": 0.152,
-    "Ejecutado": 0.0766
+    "Ejecutado": 0.0779
+  },
+  {
+    "Fecha": "01/10/2024",
+    "Programado": 0.154,
+    "Ejecutado": 0.0783
+  },
+  {
+    "Fecha": "02/10/2024",
+    "Programado": 0.155,
+    "Ejecutado": 0.079
+  },
+  {
+    "Fecha": "03/10/2024",
+    "Programado": 0.156,
+    "Ejecutado": 0.0795
+  },
+  {
+    "Fecha": "04/10/2024",
+    "Programado": 0.157,
+    "Ejecutado": 0.0806
+  },
+  {
+    "Fecha": "05/10/2024",
+    "Programado": 0.158,
+    "Ejecutado": 0.0824
+  },
+  {
+    "Fecha": "07/10/2024",
+    "Programado": 0.16,
+    "Ejecutado": 0.0834
+  },
+  {
+    "Fecha": "08/10/2024",
+    "Programado": 0.164,
+    "Ejecutado": 0.0842
+  },
+  {
+    "Fecha": "09/10/2024",
+    "Programado": 0.169,
+    "Ejecutado": 0.0852
+  },
+  {
+    "Fecha": "10/10/2024",
+    "Programado": 0.173,
+    "Ejecutado": 0.0858
+  },
+  {
+    "Fecha": "11/10/2024",
+    "Programado": 0.177,
+    "Ejecutado": 0.0872
+  },
+  {
+    "Fecha": "12/10/2024",
+    "Programado": 0.184,
+    "Ejecutado": 0.0941
+  },
+  {
+    "Fecha": "14/10/2024",
+    "Programado": 0.192,
+    "Ejecutado": 0.0941
+  },
+  {
+    "Fecha": "15/10/2024",
+    "Programado": 0.196,
+    "Ejecutado": 0.0947
+  },
+  {
+    "Fecha": "16/10/2024",
+    "Programado": 0.2,
+    "Ejecutado": 0.095
+  },
+  {
+    "Fecha": "17/10/2024",
+    "Programado": 0.201,
+    "Ejecutado":0.0955
+  },
+  {
+    "Fecha": "18/10/2024",
+    "Programado": 0.202,
+    "Ejecutado":0.0964
+  },
+  {
+    "Fecha": "19/10/2024",
+    "Programado": 0.203,
+    "Ejecutado":0.1178
+  },
+  {
+    "Fecha": "21/10/2024",
+    "Programado": 0.205,
+    "Ejecutado":0.1179
+  },
+  {
+    "Fecha": "22/10/2024",
+    "Programado": 0.206,
+    "Ejecutado":0.1181
+  },
+  {
+    "Fecha": "23/10/2024",
+    "Programado": 0.208,
+    "Ejecutado":0.1184
+  },
+  {
+    "Fecha": "24/10/2024",
+    "Programado": 0.209,
+    "Ejecutado":0.1188
+  },
+  {
+    "Fecha": "25/10/2024",
+    "Programado": 0.21,
+    "Ejecutado":0.1196
+  },
+  {
+    "Fecha": "26/10/2024",
+    "Programado": 0.211,
+    "Ejecutado":0.1200
+  },
+  {
+    "Fecha": "28/10/2024",
+    "Programado": 0.214,
+    "Ejecutado":0.1204
+  },
+  {
+    "Fecha": "29/10/2024",
+    "Programado": 0.215,
+    "Ejecutado":0.1209
+  },
+  {
+    "Fecha": "30/10/2024",
+    "Programado": 0.216,
+    "Ejecutado":0.1214
+  },
+  {
+    "Fecha": "31/10/2024",
+    "Programado": 0.217,
+    "Ejecutado":0.1220
+  },
+  {
+    "Fecha": "01/11/2024",
+    "Programado": 0.219,
+    "Ejecutado":0.1231
+  },
+  {
+    "Fecha": "02/11/2024",
+    "Programado": 0.22,
+    "Ejecutado":0.1237
+  },
+  {
+    "Fecha": "05/11/2024",
+    "Programado": 0.223,
+    "Ejecutado":0.1241
+  },
+  {
+    "Fecha": "06/11/2024",
+    "Programado": 0.224,
+    "Ejecutado":0.1247
+  },
+  {
+    "Fecha": "07/11/2024",
+    "Programado": 0.226,
+    "Ejecutado":0.1252
+  },
+  {
+    "Fecha": "08/11/2024",
+    "Programado": 0.227,
+    "Ejecutado":0.1261
+  },
+  {
+    "Fecha": "09/11/2024",
+    "Programado": 0.228,
+    "Ejecutado":0.1266
+  },
+  {
+    "Fecha": "12/11/2024",
+    "Programado": 0.232,
+    "Ejecutado":0.1268
+  },
+  {
+    "Fecha": "13/11/2024",
+    "Programado": 0.233,
+    "Ejecutado":0.1275
+  },
+  {
+    "Fecha": "14/11/2024",
+    "Programado": 0.234,
+    "Ejecutado":0.1290
+  },
+  {
+    "Fecha": "15/11/2024",
+    "Programado": 0.237,
+    "Ejecutado":0.1294
+  },
+  {
+    "Fecha": "16/11/2024",
+    "Programado": 0.241,
+    "Ejecutado":0.1298
+  },
+  {
+    "Fecha": "18/11/2024",
+    "Programado": 0.249,
+    "Ejecutado":0.1301
+  },
+  {
+    "Fecha": "19/11/2024",
+    "Programado": 0.253,
+    "Ejecutado":0.1308
+  },
+  {
+    "Fecha": "20/11/2024",
+    "Programado": 0.256,
+    "Ejecutado":0.1315
+  },
+  {
+    "Fecha": "21/11/2024",
+    "Programado": 0.258,
+    "Ejecutado":0.1314
+  },
+  {
+    "Fecha": "22/11/2024",
+    "Programado": 0.261,
+    "Ejecutado":0.1330
+  },
+  {
+    "Fecha": "23/11/2024",
+    "Programado": 0.263,
+    "Ejecutado":0.1335
+  },
+  {
+    "Fecha": "25/11/2024",
+    "Programado": 0.268,
+    "Ejecutado":0.1341
+  },
+  {
+    "Fecha": "26/11/2024",
+    "Programado": 0.271,
+    "Ejecutado":0.1350
+  },
+  {
+    "Fecha": "27/11/2024",
+    "Programado": 0.274,
+    "Ejecutado":0.1357
+  },
+  {
+    "Fecha": "28/11/2024",
+    "Programado": 0.276,
+    "Ejecutado":0.1359
+  },
+  {
+    "Fecha": "29/11/2024",
+    "Programado": 0.279,
+    "Ejecutado": 0.1360
+  },
+  {
+    "Fecha": "30/11/2024",
+    "Programado": 0.281,
+    "Ejecutado": 0.1753
+  },
+  {
+    "Fecha": "02/12/2024",
+    "Programado": 0.286,
+    "Ejecutado": 0.1760
+  },
+  {
+    "Fecha": "03/12/2024",
+    "Programado": 0.289,
+    "Ejecutado": 0.1765
+  },
+  {
+    "Fecha": "04/12/2024",
+    "Programado": 0.292,
+    "Ejecutado": 0.1768
+  },
+  {
+    "Fecha": "05/12/2024",
+    "Programado": 0.295,
+    "Ejecutado": 0.1775
+  },
+  {
+    "Fecha": "06/12/2024",
+    "Programado": 0.298,
+    "Ejecutado": 0.1775
+  },
+  {
+    "Fecha": "07/12/2024",
+    "Programado": 0.3,
+    "Ejecutado": 0.1798
+  },
+  {
+    "Fecha": "09/12/2024",
+    "Programado": 0.305,
+    "Ejecutado": 0.1805
+  },
+  {
+    "Fecha": "10/12/2024",
+    "Programado": 0.308,
+    "Ejecutado": 0.1810
+  },
+  {
+    "Fecha": "11/12/2024",
+    "Programado": 0.31,
+    "Ejecutado": 0.1817
+  },
+  {
+    "Fecha": "12/12/2024",
+    "Programado": 0.312,
+    "Ejecutado": 0.1824
+  },
+  {
+    "Fecha": "13/12/2024",
+    "Programado": 0.314,
+    "Ejecutado": 0.1829
+  },
+  {
+    "Fecha": "14/12/2024",
+    "Programado": 0.32,
+    "Ejecutado": 0.1838
+  },
+  {
+    "Fecha": "16/12/2024",
+    "Programado": 0.33,
+    "Ejecutado": 0.1842
+  },
+  {
+    "Fecha": "17/12/2024",
+    "Programado": 0.336,
+    "Ejecutado": 0.1851
+
+  },
+  {
+    "Fecha": "18/12/2024",
+    "Programado": 0.341,
+    "Ejecutado": 0.1855
+
+  },
+  {
+    "Fecha": "19/12/2024",
+    "Programado": 0.343,
+    "Ejecutado": 0.1863
+  },
+  {
+    "Fecha": "20/12/2024",
+    "Programado": 0.347,
+    "Ejecutado": 0.1871
+  },
+  {
+    "Fecha": "21/12/2024",
+    "Programado": 0.35,
+    "Ejecutado": 0.1877
+  },
+  {
+    "Fecha": "26/12/2024",
+    "Programado": 0.362,
+    "Ejecutado": 0.1881
+  },
+  {
+    "Fecha": "27/12/2024",
+    "Programado": 0.364,
+    "Ejecutado": 0.1886
+  },
+  {
+    "Fecha": "28/12/2024",
+    "Programado": 0.365,
+    "Ejecutado": 0.1888
+  },
+  {
+    "Fecha": "31/12/2024",
+    "Programado": 0.371,
+    "Ejecutado": 0.1890
+  },
+  {
+    "Fecha": "03/01/2025",
+    "Programado": 0.379,
+    "Ejecutado": 0.1893
+  },
+  {
+    "Fecha": "04/01/2025",
+    "Programado": 0.382,
+    "Ejecutado": 0.1897
   }
 ]
