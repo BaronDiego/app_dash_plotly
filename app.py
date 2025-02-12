@@ -87,6 +87,7 @@ def train_and_display(valor):
 
     return fig, f"El pronóstico de avance para el {valor}  es del {entero :.2f}%", f"MSE: {mse}", f"r2: {r2}"
 
+server = app.server
 
 if __name__ == '__main__':
     app.run()
