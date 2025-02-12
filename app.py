@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 import dash_bootstrap_components as dbc
 import json
-from datetime import date, timedelta
+from datetime import date
 
 import locale
 # Setea la variable LC_ALL al conjunto de código UTF-8 con descripción español España
